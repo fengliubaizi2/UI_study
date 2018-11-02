@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
     public void setToolBarStyle(Toolbar toolbar, View topView, int styleColor) {
 
         Window window = getWindow();
+
         getStatusHeight();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.setStatusBarColor(getResources().getColor(R.color.orange));
