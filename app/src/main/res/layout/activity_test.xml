@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.mean.ui.MyView.MyCircleImageView
+        android:src="@drawable/logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+    <!--<android.support.v4.widget.CircleImageView-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:src="@drawable/logo"/>-->
+    <com.mean.ui.MyView.FlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试" />
+
+        <Button
+            android:text="测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="测试"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.mean.ui.MyView.CircleProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            app:roundProgressColor="#ff00ff"
+            app:textColor="#666666"
+            app:textSize="20dp"
+            app:roundWidth="15dp"
+            />
+    </com.mean.ui.MyView.FlowLayout>
+    <com.mean.ui.MyView.MinionView
+        android:id="@+id/minion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

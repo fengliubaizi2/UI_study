@@ -1,0 +1,29 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.8.1'  //添加这一行
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//Error:(36, 13) Failed to resolve: com.android.support:appcompat-v7:27.1.0
+//<a href="install.m2.repo">Install Repository and sync project</a><br><a href="openFile:/Users/renzhenhua/Desktop/workspace/UI_study/app/build.gradle">Show in File</a><br><a href="open.dependency.in.project.structure">Show in Project Structure dialog</a>
